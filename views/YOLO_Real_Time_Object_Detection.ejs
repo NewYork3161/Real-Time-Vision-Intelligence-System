@@ -15,7 +15,6 @@
       margin:0;
     }
 
-    /* TOP NAVIGATION */
     .top-nav{
       background:#020617;
       border-bottom:1px solid rgba(255,255,255,0.08);
@@ -25,20 +24,12 @@
       z-index:1000;
     }
 
-    .top-nav .nav-inner{
+    .nav-inner{
       display:flex;
       justify-content:space-between;
       align-items:center;
-      gap:15px;
       flex-wrap:wrap;
-    }
-
-    .top-nav .left-links,
-    .top-nav .right-links{
-      display:flex;
       gap:12px;
-      flex-wrap:wrap;
-      align-items:center;
     }
 
     .site-title{
@@ -48,7 +39,6 @@
       margin:0;
     }
 
-    /* PAGE HEADER */
     .page-header{
       padding-top:60px;
       padding-bottom:25px;
@@ -58,16 +48,13 @@
     .page-header h1{
       font-size:3rem;
       font-weight:700;
-      margin-bottom:12px;
     }
 
     .page-header p{
       font-size:1.15rem;
       color:#cbd5e1;
-      margin:0;
     }
 
-    /* IMAGE SECTION */
     .image-section{
       padding-bottom:30px;
     }
@@ -76,8 +63,6 @@
       background:#1e293b;
       border-radius:16px;
       padding:16px;
-      height:100%;
-      box-shadow:0 10px 30px rgba(0,0,0,0.18);
     }
 
     .project-image{
@@ -85,108 +70,31 @@
       height:340px;
       object-fit:cover;
       border-radius:12px;
-      display:block;
-      background:#0b1220;
     }
 
-    .image-caption{
-      margin-top:14px;
-      color:#cbd5e1;
-      font-size:0.95rem;
-      text-align:center;
-    }
-
-    /* CONTENT BOXES */
     .content-box{
       background:#1e293b;
       border-radius:16px;
       padding:28px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.18);
     }
 
     .section-title{
       font-size:2rem;
-      font-weight:700;
       text-align:center;
       margin-bottom:22px;
-    }
-
-    /* SCROLLABLE DESCRIPTION BOX */
-    .description-section{
-      padding-top:10px;
-      padding-bottom:35px;
     }
 
     .description-scroll{
       height:720px;
       overflow-y:auto;
-      overflow-x:hidden;
       padding-right:14px;
       line-height:1.8;
-      font-size:1.06rem;
-      color:#e5e7eb;
-      scroll-behavior:smooth;
+      font-size:1.05rem;
     }
 
     .description-scroll h3{
-      font-size:1.45rem;
-      font-weight:700;
-      color:#ffffff;
       margin-top:26px;
-      margin-bottom:12px;
-    }
-
-    .description-scroll p{
-      margin-bottom:18px;
-      color:#dbe4ee;
-    }
-
-    .description-scroll ul{
-      margin-bottom:18px;
-      padding-left:24px;
-    }
-
-    .description-scroll li{
-      margin-bottom:10px;
-      color:#dbe4ee;
-    }
-
-    .description-scroll::-webkit-scrollbar{
-      width:12px;
-    }
-
-    .description-scroll::-webkit-scrollbar-track{
-      background:#0b1220;
-      border-radius:20px;
-    }
-
-    .description-scroll::-webkit-scrollbar-thumb{
-      background:#3b82f6;
-      border-radius:20px;
-      border:2px solid #0b1220;
-    }
-
-    .description-scroll::-webkit-scrollbar-thumb:hover{
-      background:#60a5fa;
-    }
-
-    /* CODE IMAGE GRID */
-    .code-grid-section{
-      padding-top:10px;
-      padding-bottom:35px;
-    }
-
-    .code-grid-box{
-      background:#1e293b;
-      border-radius:16px;
-      padding:28px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.18);
-    }
-
-    /* LINKS */
-    .links-section{
-      padding-top:5px;
-      padding-bottom:80px;
+      font-size:1.4rem;
     }
 
     .button-row{
@@ -194,495 +102,151 @@
       justify-content:center;
       gap:16px;
       flex-wrap:wrap;
-    }
-
-    /* SMALL SCREEN */
-    @media (max-width: 992px){
-      .page-header h1{
-        font-size:2.4rem;
-      }
-
-      .project-image{
-        height:280px;
-      }
-
-      .description-scroll{
-        height:620px;
-        font-size:1rem;
-      }
-    }
-
-    @media (max-width: 576px){
-      .page-header h1{
-        font-size:2rem;
-      }
-
-      .page-header p{
-        font-size:1rem;
-      }
-
-      .description-scroll{
-        height:560px;
-      }
-
-      .project-image{
-        height:240px;
-      }
+      padding:60px 0;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- TOP NAV -->
-  <nav class="top-nav">
-    <div class="container nav-inner">
-      <div class="left-links">
-        <a href="/projects" class="btn btn-outline-light">← Back To Projects</a>
-        <a href="/" class="btn btn-outline-light">Home</a>
-      </div>
+<nav class="top-nav">
+  <div class="container nav-inner">
+    <div>
+      <a href="/projects" class="btn btn-outline-light">← Back To Projects</a>
+      <a href="/" class="btn btn-outline-light">Home</a>
+    </div>
 
-      <p class="site-title mb-0">Michael Clark | Developer Portfolio</p>
+    <p class="site-title">Michael Clark | Developer Portfolio</p>
 
-      <div class="right-links">
-        <a href="https://github.com/NewYork3161/RealTimeYOLO-Analyzer" target="_blank" class="btn btn-primary">GitHub</a>
+    <div>
+      <a href="https://github.com/NewYork3161/RealTimeYOLO-Analyzer" target="_blank" class="btn btn-primary">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container page-header">
+  <h1>YOLO Real-Time Object Detection</h1>
+  <p>
+    Real-Time Computer Vision • Performance Analytics • AI Reporting • Production-Level System Design
+  </p>
+</div>
+
+<div class="container image-section">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="project-image-card">
+        <img src="/Images/Yolo_Image_One.png" class="project-image">
       </div>
     </div>
-  </nav>
-
-  <!-- HEADER -->
-  <div class="container page-header">
-    <h1>YOLO Real-Time Object Detection</h1>
-    <p>
-      Real-Time Computer Vision, Performance Analytics, AI Reporting, and a Graphical Review Dashboard
-    </p>
-  </div>
-
-  <!-- TOP IMAGE GRID -->
-  <div class="container image-section">
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="project-image-card">
-          <img src="/Images/Yolo_Image_One.png" alt="YOLO detection example image 1" class="project-image">
-          <div class="image-caption">
-            Live object detection output with bounding boxes and labels rendered on screen.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="project-image-card">
-          <img src="/Images/Yolo_Image_Four.png" alt="YOLO detection example image 2" class="project-image">
-          <div class="image-caption">
-            Example of the system detecting real-world objects while tracking runtime behavior.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="project-image-card">
-          <img src="/Images/Chart_Image_Three.png" alt="Code screenshot 1" class="project-image">
-          <div class="image-caption">
-            Artificial Intelligence Performance Analysis of Real-Time Object Detection.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="project-image-card">
-          <img src="/Images/Chart_Image_Four.png" alt="Code screenshot 2" class="project-image">
-          <div class="image-caption">
-          YOLO Detection Performance Chart Showing Frame-by-Frame Inference Time.
-          </div>
-        </div>
+    <div class="col-lg-6">
+      <div class="project-image-card">
+        <img src="/Images/Yolo_Image_Four.png" class="project-image">
       </div>
     </div>
   </div>
+</div>
+
+<div class="container">
+  <div class="content-box">
+
+    <h2 class="section-title">Complete Project Breakdown</h2>
+
+    <div class="description-scroll">
+
+      <h3>Project Overview</h3>
+      <p>
+        This is a real-time computer vision system built using YOLOv8 that captures live webcam input and performs object detection using deep neural networks.
+      </p>
+
+      <p>
+        The system goes beyond simple detection. It records performance metrics, logs structured data, generates analytics, and produces AI-assisted reports that explain how the model behaves in real-world conditions.
+      </p>
+
+      <h3>System Architecture</h3>
+      <p>
+        Camera → Detection → Logging → Analytics → Visualization → AI Reporting
+      </p>
+
+      <h3>Execution Flow</h3>
+      <ul>
+        <li>System initializes YOLO model and logging pipeline</li>
+        <li>Webcam captures frames in real time</li>
+        <li>Each frame is processed through the detection engine</li>
+        <li>Inference time is measured per frame</li>
+        <li>Detection results are logged into structured CSV data</li>
+        <li>Analytics module processes the dataset</li>
+        <li>Charts and performance metrics are generated</li>
+        <li>AI system analyzes results and produces a report</li>
+      </ul>
+
+      <h3>Skill Set Demonstrated</h3>
+      <ul>
+        <li>Computer Vision Engineering (YOLOv8)</li>
+        <li>Deep Learning Inference (PyTorch)</li>
+        <li>Performance Optimization & Benchmarking</li>
+        <li>Data Logging & Analytics Pipelines</li>
+        <li>Data Visualization (Matplotlib)</li>
+        <li>AI API Integration</li>
+        <li>Modular System Architecture</li>
+        <li>End-to-End AI System Development</li>
+      </ul>
+
+      <h3>Engineering Challenges Solved</h3>
+      <ul>
+        <li>Maintaining real-time inference performance under continuous video input</li>
+        <li>Reducing performance bottlenecks caused by logging and analytics</li>
+        <li>Designing a system that collects data without impacting runtime speed</li>
+        <li>Structuring modular components for scalability and testing</li>
+        <li>Handling variability in detection outputs across different environments</li>
+      </ul>
+
+      <h3>What I Bring to a Company</h3>
+      <ul>
+        <li>Ability to design scalable AI pipelines from scratch</li>
+        <li>Strong understanding of performance monitoring and optimization</li>
+        <li>Experience building full systems, not just isolated features</li>
+        <li>Capability to transform raw data into meaningful insights</li>
+        <li>End-to-end development from model execution to analytics and reporting</li>
+      </ul>
+
+      <h3>Real-World Applications</h3>
+      <ul>
+        <li>Security and surveillance systems</li>
+        <li>Retail analytics and customer behavior tracking</li>
+        <li>Autonomous vehicles and robotics</li>
+        <li>Traffic monitoring and smart city infrastructure</li>
+        <li>Industrial automation and defect detection</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Companies don’t just need models — they need systems that are reliable, measurable, and scalable.
+      </p>
+
+      <p>
+        This project shows the ability to build AI systems that can be deployed, monitored, and improved over time — exactly what production environments require.
+      </p>
+
+      <h3>Summary</h3>
+      <p>
+        This project transforms object detection into a full intelligent system capable of analyzing its own performance and generating insights.
+      </p>
+
+      <p>
+        It demonstrates real-world AI engineering — not just running models, but building complete systems around them.
+      </p>
 
-  <!-- LARGE SCROLLABLE DESCRIPTION -->
-  <div class="container description-section">
-    <div class="content-box">
-      <h2 class="section-title">Complete Project Breakdown</h2>
-
-      <div class="description-scroll">
-        <h3>Project Overview</h3>
-        <p>
-          This project is a real-time computer vision system built around the YOLOv8 deep learning model.
-          The system captures live video frames from a webcam, performs object detection using a trained neural network,
-          records performance metrics during inference, and analyzes the results using automated data analytics and
-          artificial intelligence.
-        </p>
-
-        <p>
-          Unlike a basic object detection demo, this project was designed to function as a complete detection and
-          performance analysis pipeline. The system not only identifies objects in real time, but also monitors its own
-          performance, logs runtime metrics, generates visual charts, and produces AI-assisted analysis reports that
-          explain how well the detection system is performing.
-        </p>
-
-        <p>
-          The result is a full AI monitoring tool that demonstrates real-time machine learning inference, performance
-          measurement, data analysis, and visualization within a single integrated application.
-        </p>
-
-        <h3>System Architecture</h3>
-        <p>
-          The system is structured as a modular pipeline composed of several independent components that work together
-          to process video input, perform detection, record performance data, and analyze results.
-        </p>
-
-        <p>
-          The pipeline operates in the following sequence:
-        </p>
-
-        <p>
-          Camera Input → Frame Capture → YOLO Detection → Performance Measurement → Logging → Data Analysis →
-          Chart Generation → AI Performance Report → Graphical Dashboard
-        </p>
-
-        <p>
-          Each stage of this pipeline has a specific responsibility and is implemented in its own module. This modular
-          architecture ensures the project remains maintainable, scalable, and easy to extend with additional features
-          in the future.
-        </p>
-
-        <h3>Real-Time Object Detection</h3>
-        <p>
-          The core functionality of the project is real-time object detection using the YOLOv8 model.
-        </p>
-
-        <p>
-          YOLO, which stands for “You Only Look Once,” is a deep learning object detection framework designed for
-          high-speed inference. It processes an entire image in a single pass through a neural network and predicts
-          bounding boxes and class labels for detected objects.
-        </p>
-
-        <p>
-          In this system, frames captured from the webcam are passed into the YOLO detection engine. The model analyzes
-          each frame and identifies objects that belong to known categories such as people, chairs, bottles, phones,
-          keyboards, refrigerators, and other everyday objects included in the model’s training dataset.
-        </p>
-
-        <p>
-          Once objects are detected, the system overlays bounding boxes and labels on top of the frame to visually
-          display the detection results. These annotated frames are then displayed in real time to the user.
-        </p>
-
-        <p>
-          This allows the system to operate as a live object detection camera capable of identifying multiple objects
-          simultaneously within the environment.
-        </p>
-
-        <h3>Performance Measurement</h3>
-        <p>
-          In addition to performing object detection, the system continuously monitors the performance of the detection
-          model.
-        </p>
-
-        <p>
-          For each frame processed by the YOLO model, the system measures how long the inference process takes. This is
-          accomplished by recording timestamps immediately before and after the detection function executes.
-        </p>
-
-        <p>
-          The difference between these timestamps represents the inference time for that specific frame.
-        </p>
-
-        <p>
-          This measurement allows the system to monitor:
-        </p>
-
-        <ul>
-          <li>Detection latency</li>
-          <li>Frame processing speed</li>
-          <li>Stability of inference performance over time</li>
-        </ul>
-
-        <p>
-          By collecting this data across many frames, the system builds a detailed profile of how the detection model
-          performs during runtime.
-        </p>
-
-        <h3>Detection Logging System</h3>
-        <p>
-          Every frame processed by the system generates a set of runtime metrics. These metrics are written into a
-          structured log file that can later be used for analysis.
-        </p>
-
-        <p>
-          Each entry recorded in the log file contains the following information:
-        </p>
-
-        <ul>
-          <li>Frame index — the number of the frame processed during the session</li>
-          <li>Object count — the number of objects detected in that frame</li>
-          <li>Inference time — how long the detection model required to process the frame</li>
-        </ul>
-
-        <p>
-          The log is stored as a CSV file, allowing it to be easily imported into data analysis tools such as Pandas.
-        </p>
-
-        <p>
-          This logging system transforms the detection process into a measurable dataset that can be analyzed after the
-          detection session is complete.
-        </p>
-
-        <h3>Data Analysis and Visualization</h3>
-        <p>
-          Once the detection session ends, the logged data is analyzed using the Pandas data analysis library.
-        </p>
-
-        <p>
-          Pandas loads the detection log and converts it into a structured data table that can be processed using
-          statistical operations. The system calculates various summary metrics, including:
-        </p>
-
-        <ul>
-          <li>Average inference time</li>
-          <li>Maximum inference time</li>
-          <li>Minimum inference time</li>
-          <li>Average number of detected objects</li>
-          <li>Total frames processed</li>
-        </ul>
-
-        <p>
-          These metrics provide insight into the efficiency and behavior of the detection system.
-        </p>
-
-        <p>
-          To further visualize the system’s performance, the project generates charts using the Matplotlib library.
-        </p>
-
-        <p>
-          Two primary charts are produced:
-        </p>
-
-        <ul>
-          <li>
-            <strong>Inference Time per Frame</strong> — This chart shows how long the YOLO model required to process
-            each frame. It helps identify performance spikes or unstable processing behavior.
-          </li>
-          <li>
-            <strong>Objects Detected per Frame</strong> — This chart displays how many objects were detected in each
-            frame over time. It provides insight into how detection load varies depending on the scene.
-          </li>
-        </ul>
-
-        <p>
-          These charts make it easier to visually inspect how the AI system behaves during operation.
-        </p>
-
-        <h3>AI-Generated Performance Analysis</h3>
-        <p>
-          One of the most advanced features of this project is the integration of artificial intelligence to analyze the
-          system’s performance metrics.
-        </p>
-
-        <p>
-          After the charts are generated and the dataset is analyzed, the summarized performance metrics are sent to the
-          OpenAI API. The AI model interprets these values and produces a written performance analysis report.
-        </p>
-
-        <p>
-          The AI evaluates factors such as:
-        </p>
-
-        <ul>
-          <li>Average inference speed</li>
-          <li>Detection stability</li>
-          <li>Potential performance bottlenecks</li>
-          <li>Suggestions for optimization</li>
-          <li>Possible improvements to system configuration</li>
-        </ul>
-
-        <p>
-          Rather than simply presenting raw numbers, the system produces a readable report explaining what the
-          performance data means and how the system could be improved.
-        </p>
-
-        <p>
-          This transforms the project from a simple object detection application into an intelligent monitoring and
-          diagnostic tool for computer vision systems.
-        </p>
-
-        <h3>Graphical Analysis Dashboard</h3>
-        <p>
-          The results generated by the system are displayed in a graphical desktop dashboard built using the Tkinter GUI
-          framework.
-        </p>
-
-        <p>
-          The dashboard serves as a visual interface for reviewing the results of a detection session. It displays the
-          generated charts and allows the user to view performance data in an organized environment.
-        </p>
-
-        <p>
-          Within the dashboard, users can review inference performance, inspect object detection patterns, and read the
-          AI-generated performance report.
-        </p>
-
-        <p>
-          This interface allows developers to quickly evaluate how well the detection system is functioning and
-          determine whether any adjustments are needed.
-        </p>
-
-        <h3>Software Architecture</h3>
-        <p>
-          The project follows a modular architecture where each file has a specific responsibility.
-        </p>
-
-        <p>
-          <strong>Main Controller</strong><br>
-          Coordinates the entire detection pipeline and orchestrates the execution of each subsystem.
-        </p>
-
-        <p>
-          <strong>Camera Module</strong><br>
-          Handles communication with the webcam and provides frames to the detection engine.
-        </p>
-
-        <p>
-          <strong>Detection Engine</strong><br>
-          Loads the YOLO model and performs object detection on incoming frames.
-        </p>
-
-        <p>
-          <strong>Logging System</strong><br>
-          Records performance metrics for each frame processed by the system.
-        </p>
-
-        <p>
-          <strong>Analytics Module</strong><br>
-          Processes logged data and calculates summary statistics.
-        </p>
-
-        <p>
-          <strong>Chart Generator</strong><br>
-          Creates visual charts that represent system performance.
-        </p>
-
-        <p>
-          <strong>AI Analysis Module</strong><br>
-          Uses the OpenAI API to generate written performance analysis reports.
-        </p>
-
-        <p>
-          <strong>Dashboard Interface</strong><br>
-          Displays charts and analysis results in a graphical interface.
-        </p>
-
-        <p>
-          This modular structure ensures the project remains organized and scalable as new features are added.
-        </p>
-
-        <h3>What the System Does During Execution</h3>
-        <p>
-          When the application starts, the logging system is initialized so that runtime information can be recorded.
-          The YOLO detection model is then loaded into memory, preparing the AI engine for inference.
-        </p>
-
-        <p>
-          After initialization, the webcam is opened and begins supplying frames to the main application loop. Each
-          frame is captured one at a time and passed into the detector.
-        </p>
-
-        <p>
-          Right before YOLO processes the frame, the system records the current time. After YOLO finishes inference, the
-          system records the time again. The time difference becomes the inference time for that frame.
-        </p>
-
-        <p>
-          The application then extracts information from the results, including how many objects were detected and what
-          categories those objects belong to. It stores the frame number, object count, and inference time in the CSV
-          log file.
-        </p>
-
-        <p>
-          At the same time, the system renders bounding boxes and labels on the image so the user can see the detection
-          results live on screen.
-        </p>
-
-        <p>
-          Once the detection session ends, the project moves into the post-processing stage. It reads the detection log,
-          generates charts, summarizes the performance metrics, sends those metrics to the AI analysis module, saves the
-          AI-generated report, and displays the results inside the graphical dashboard.
-        </p>
-
-        <h3>Why This Project Is Stronger Than a Basic YOLO Demo</h3>
-        <p>
-          A standard YOLO demo usually stops at webcam input, object detection, and drawing boxes on the screen.
-        </p>
-
-        <p>
-          This project goes much further. It adds runtime instrumentation, structured logging, chart generation,
-          analytics, artificial intelligence interpretation, and a graphical review interface.
-        </p>
-
-        <p>
-          That means the system is not only capable of detecting objects, but also capable of analyzing and explaining
-          how well it performs while doing so.
-        </p>
-
-        <p>
-          This turns the project from a simple machine learning demo into a complete AI application with monitoring,
-          diagnostics, and reporting features.
-        </p>
-
-        <h3>Technical Skills Demonstrated</h3>
-        <p>
-          This project demonstrates a broad range of technical abilities across computer vision, software engineering,
-          analytics, and interface development.
-        </p>
-
-        <ul>
-          <li>Real-time machine learning inference</li>
-          <li>Computer vision system design</li>
-          <li>Performance monitoring and instrumentation</li>
-          <li>Data logging and structured runtime analytics</li>
-          <li>Data visualization using charts</li>
-          <li>Artificial intelligence API integration</li>
-          <li>Graphical desktop interface development</li>
-          <li>Modular software architecture and separation of concerns</li>
-        </ul>
-
-        <p>
-          By combining these technologies into a single application, the project demonstrates how multiple engineering
-          disciplines can be brought together to create a practical, intelligent, and well-structured AI system.
-        </p>
-
-        <h3>Summary</h3>
-        <p>
-          The YOLO Real-Time Object Detection project is a complete AI detection and analytics platform. It captures
-          live video, performs object detection using deep learning, records performance metrics, visualizes runtime
-          behavior through charts, and generates AI-driven analysis reports that explain how the system performs.
-        </p>
-
-        <p>
-          The project demonstrates the integration of computer vision, data analytics, and artificial intelligence into a
-          cohesive software system designed to evaluate and improve machine learning performance in real time.
-        </p>
-
-        <p>
-          In practical terms, this project shows not only that a model can run, but that the system surrounding the
-          model can observe, measure, interpret, and present its behavior in a way that is useful for developers and
-          future optimization work.
-        </p>
-      </div>
     </div>
   </div>
+</div>
 
-
-  
-  <!-- LINKS -->
-  <div class="container links-section">
-    <div class="button-row">
-      <a href="https://github.com/NewYork3161" target="_blank" class="btn btn-primary btn-lg">View GitHub</a>
-     
-      <a href="/projects" class="btn btn-outline-light btn-lg">Back To Projects</a>
-      <a href="/" class="btn btn-outline-light btn-lg">Back To Home</a>
-    </div>
+<div class="container">
+  <div class="button-row">
+    <a href="https://github.com/NewYork3161" class="btn btn-primary btn-lg">View GitHub</a>
+    <a href="/projects" class="btn btn-outline-light btn-lg">Back To Projects</a>
+    <a href="/" class="btn btn-outline-light btn-lg">Back To Home</a>
   </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
